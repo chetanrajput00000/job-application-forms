@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ccc;
+}
+
+.container {
+    max-width: 600px;
+    background: white;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-radius: 5px;
+    border: 2px solid black;
+    grid-gap: 10px;
+    grid-column: 1/sapn 2;
+    margin: 25px auto;
+}
+
+h1 {
+    margin: 0px 24px 25px 2px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 30px 10px 13px;
+    padding: -3px 0px 1px 1px;
+    grid-gap: 10px;
+}
+
+.box1 {
+
+    grid-column: 1 / span 2;
+}
+
+.box1 textarea {
+    width: 100%;
+}
+
+
+.box1 {
+    padding: 1px;
+    margin: 0px 0px 0px 5px;
+}
+
+
+
+@media (max-width: 460px) {
+    .box1 {
+        grid-column: 1 / span 1;
+    }
+}
+
+@media (max-width: 460px) {
+    .button {
+        width: 150px;
+    }
+}
+.bull {
+    width: 640px;
+    display: flex;
+    justify-content:baseline;
+    font-size: 12px;
+    color: white;
+}
+
+input,
+select {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+textarea {
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline-color: red;
+}
+
+button {
+    background-color: red;
+    border: white solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+    transition: 0.3s ease-in;
+}
+
+button:hover {
+    background-color: #ccc;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
